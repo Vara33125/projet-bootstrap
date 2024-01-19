@@ -1,0 +1,49 @@
+html, body{height: 100%;}
+body{display: grid;
+    grid-template-rows: auto 1fr auto;}
+*{font-family: 'Poppins', sans-serif;}
+.navbar-brand{ font-family: 'Pacifico', cursive;}
+.bg-projet {background-color: #93c6f1;}
+
+.active{color: rgb(136, 123, 3) !important;}
+#hero-section{height: 90vh;}
+#warning{
+    height: 20PX;
+    width: 20PX;
+    color: #93c6f1;
+}
+@keyframes moveUpDown 
+{0%, 100% {transform: translateY(0); /* La position initiale ou finale */}
+50% {transform: translateY(-50px); /* Mi-chemin, monte de 20 pixels */}}
+#hero-section img{animation: moveUpDown 5s ease-in-out infinite; /* 2 secondes, effet ease-in-out, infinie */}
+#services-section img{
+    height: 25%;
+    width: 25%;
+    padding-top: 20px;}
+.right-side{
+    background-image: url("../images/hero-right-side.png");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 200px 320px;
+    opacity: 0.6;
+    top: 80vh;}
+.accordion-item{background-color: #93c6f1;}
+footer p{font-family: 'Pacifico', cursive;
+    background-color: #93c6f1;}
+/* -----------------------------Tablet----------------------------------------------- */
+@media screen and (min-width: 768px) {
+    #hero-section{height: 50vh;}
+    #services-section img{
+        height: 65%;
+        width: 65%;}
+    .right-side{top: 40vh;}}
+/* -----------------------------Laptop------------------------------------------------ */
+@media screen and (min-width: 992px) {
+    #hero-section{height: 80vh;}
+    #services-section img{
+        height: 40%;
+        width: 40%;}
+    .right-side{top: 80vh;}}

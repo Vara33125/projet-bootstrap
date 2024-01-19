@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Voici mon premier projet Bootstrap">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="projet, bootstrap">
+    <meta name="author" content="Vincent KHERFALLAH">
+    <title>dwwm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/app.css">
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg bg-projet shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">dwwm</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="my-2 my-lg-0 mx-lg-2 btn btn-outline-dark" href="login.html"> Connexion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="my-2 my-lg-0 btn btn-dark " href="register.html"> Inscription</a>
+                </li>
+            </ul>  
+          </div>
+        </div>
+    </nav>
+    <!-- contenu principal de la page -->
+    <main>
+        <H1 class="text-center pt-3 pb-3"> Page de contact</H1>
+        <div class="container">
+            <div class="row">
+               <div class="col-md-4 order-md-2 mb-2">
+                    <img class="img-fluid" src="images/undraw.svg" alt="+">
+               </div> 
+               <div class="col-md-8 order-md-1 ">
+                    <form action="traitement.php" method="post">
+                        <div class="row ">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" name="firstName" placeholder="Votre Prénom" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" name="lastName" placeholder="Votre Nom" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-6 mb-3">
+                                <input type="mail" name="email" placeholder="Votre Email" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="tel" name="phonenumber" placeholder="Votre Numéro de Téléphone" class="form-control">
+                            </div>
+                        </div>
+                        <div>
+                            <textarea class="form-control mb-2" name="message" id="message"  > Votre Message</textarea>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <input type="submit" value="Envoyer" class="btn btn-dark mb-2 shadow">
+                        </div>
+                    </form>
+               </div> 
+            </div>
+        </div>
+    </main>
+    <!-- pied de page -->
+    <footer class=" text-bg-primary mb-0">
+        <p class="text-center display-4 fs-2 mb-0 "> dwwm </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
